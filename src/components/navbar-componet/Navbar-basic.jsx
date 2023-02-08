@@ -1,8 +1,22 @@
-import React from "react";
-import { MenuItems } from "./Menu-items";
+
 import { Nav } from "react-bootstrap";
+import React, { useState } from "react";
 
 export default function Navbar() {
+
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleClick = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const MenuItems = [
+    { Title: "Home", url: "/", cName: "nav-links" },
+    { Title: "About", url: "/about", cName: "nav-links" },
+    { Title: "Services", url: "/services", cName: "nav-links" },
+    { Title: "Contact", url: "/contact", cName: "nav-links" },
+  ];
+
   return (
     <Nav className="NavbarItems">
       <h1 className="Navbar-logo">React</h1>
