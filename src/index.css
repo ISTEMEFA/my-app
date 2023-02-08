@@ -12,23 +12,9 @@ code {
     monospace;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+/********************
+form
+********************/
 
 .form-style {
   width: 400px;
@@ -41,4 +27,64 @@ code {
   align-items: center;
   height: 100%;
 }
+/********************
+form
+********************/
 
+/********************
+navbar
+********************/
+body {
+  margin: 0;
+  padding: 0;
+}
+.NavbarItems {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+}
+
+.NavbarItems h1 {
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+}
+.logo {
+  width: 20%;
+  float: left;
+}
+.navbar-ul {
+  width: 80%;
+  float: left;
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+}
+li {
+  display: inline;
+  list-style: none;
+  font-size: 18px;
+  padding: 10px;
+  line-height: 80px;
+}
+.nav-links {
+  color: white;
+  text-decoration: none;
+}
+.nav-links-mobile {
+  color: white;
+  text-decoration: none;
+}
+li:hover {
+  background-color: white;
+}
+li:hover .nav-links {
+  color: black;
+}
+li:hover .nav-links-mobile {
+  color: black;
+}
+/********************
+navbar
+********************/
